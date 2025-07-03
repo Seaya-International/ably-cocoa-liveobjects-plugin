@@ -18,3 +18,5 @@ docs-coverage-report
 
 # Stuff that Cursor checks out to use locally (this is my naming, not any special Cursor thing)
 /cursor-support
+
+/.idea

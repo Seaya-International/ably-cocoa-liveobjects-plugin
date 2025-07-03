@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		21971DFF2C60D89C0074B8AE /* AblyLiveObjects in Frameworks */ = {isa = PBXBuildFile; productRef = 21971DFE2C60D89C0074B8AE /* AblyLiveObjects */; };
 		8436FC692CA0723C0013EDE5 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 8436FC682CA0723C0013EDE5 /* AsyncAlgorithms */; };
+		A728212D2E034F21005C71FD /* Ably in Frameworks */ = {isa = PBXBuildFile; productRef = A728212C2E034F21005C71FD /* Ably */; };
+		A728212F2E034F21005C71FD /* AblyPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = A728212E2E034F21005C71FD /* AblyPlugin */; };
+		A72821322E034F4B005C71FD /* AblyLiveObjects in Frameworks */ = {isa = PBXBuildFile; productRef = A72821312E034F4B005C71FD /* AblyLiveObjects */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +28,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				21971DFF2C60D89C0074B8AE /* AblyLiveObjects in Frameworks */,
+				A728212F2E034F21005C71FD /* AblyPlugin in Frameworks */,
+				A72821322E034F4B005C71FD /* AblyLiveObjects in Frameworks */,
 				8436FC692CA0723C0013EDE5 /* AsyncAlgorithms in Frameworks */,
+				A728212D2E034F21005C71FD /* Ably in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +84,9 @@
 			packageProductDependencies = (
 				21971DFE2C60D89C0074B8AE /* AblyLiveObjects */,
 				8436FC682CA0723C0013EDE5 /* AsyncAlgorithms */,
+				A728212C2E034F21005C71FD /* Ably */,
+				A728212E2E034F21005C71FD /* AblyPlugin */,
+				A72821312E034F4B005C71FD /* AblyLiveObjects */,
 			);
 			productName = AblyLiveObjectsExample;
 			productReference = 21F09A9C2C60CAF00025AF73 /* AblyLiveObjectsExample.app */;
@@ -109,6 +118,8 @@
 			mainGroup = 21F09A932C60CAF00025AF73;
 			packageReferences = (
 				8436FC672CA0723C0013EDE5 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
+				A728212B2E034F21005C71FD /* XCLocalSwiftPackageReference "../../ably-cocoa" */,
+				A72821302E034F4B005C71FD /* XCLocalSwiftPackageReference "../../ably-cocoa-liveobjects-plugin" */,
 			);
 			productRefGroup = 21F09A9D2C60CAF00025AF73 /* Products */;
 			projectDirPath = "";
@@ -367,6 +378,17 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		A728212B2E034F21005C71FD /* XCLocalSwiftPackageReference "../../ably-cocoa" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../ably-cocoa";
+		};
+		A72821302E034F4B005C71FD /* XCLocalSwiftPackageReference "../../ably-cocoa-liveobjects-plugin" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../ably-cocoa-liveobjects-plugin";
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		8436FC672CA0723C0013EDE5 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -387,6 +409,18 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8436FC672CA0723C0013EDE5 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
 			productName = AsyncAlgorithms;
+		};
+		A728212C2E034F21005C71FD /* Ably */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Ably;
+		};
+		A728212E2E034F21005C71FD /* AblyPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AblyPlugin;
+		};
+		A72821312E034F4B005C71FD /* AblyLiveObjects */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AblyLiveObjects;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

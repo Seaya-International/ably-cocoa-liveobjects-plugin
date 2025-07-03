@@ -1,6 +1,24 @@
 {
-  "originHash" : "13678df8bf756b5a26255707c7a7a2f70f4fa09e8466f4b4d0ca97436222d7d0",
+  "originHash" : "2587d41517ef49f63e64167813ee9fec07f16a411a5f1f56ca77b45827c3805d",
   "pins" : [
+    {
+      "identity" : "delta-codec-cocoa",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ably/delta-codec-cocoa",
+      "state" : {
+        "revision" : "3ee62ea40a63996b55818d44b3f0e56d8753be88",
+        "version" : "1.3.3"
+      }
+    },
+    {
+      "identity" : "msgpack-objective-c",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rvi/msgpack-objective-C",
+      "state" : {
+        "revision" : "3e36b48e04ecd756cb927bd5f5b9bf6d45e475f9",
+        "version" : "0.4.0"
+      }
+    },
     {
       "identity" : "swift-async-algorithms",
       "kind" : "remoteSourceControl",
