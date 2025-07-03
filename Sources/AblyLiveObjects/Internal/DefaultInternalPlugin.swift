@@ -6,6 +6,25 @@ import ObjectiveC.NSObject
 /// The default implementation of `AblyPlugin`'s `LiveObjectsInternalPluginProtocol`. Implements the interface that ably-cocoa uses to access the functionality provided by the LiveObjects plugin.
 @objc
 internal final class DefaultInternalPlugin: NSObject, AblyPlugin.LiveObjectsInternalPluginProtocol {
+
+    func decodeObjectMessage(
+        _ serialized: [String : Any],
+        context: any DecodingContextProtocol,
+        format: EncodingFormat,
+        error: AutoreleasingUnsafeMutablePointer<ARTErrorInfo?>?
+    ) -> (any ObjectMessageProtocol)? {
+        // TODO
+        return nil
+    }
+    
+    func encodeObjectMessage(
+        _ objectMessage: any ObjectMessageProtocol,
+        format: EncodingFormat
+    ) -> [String : Any] {
+        // TODO
+        return [:]
+    }
+    
     private let pluginAPI: AblyPlugin.PluginAPIProtocol
 
     internal init(pluginAPI: AblyPlugin.PluginAPIProtocol) {
